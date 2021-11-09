@@ -18,12 +18,12 @@ from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
 
-from app.nc_tutorials.settings import STATIC_URL
+"""comment to confirm i'm pushing updates
+testing
+"""
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('tutorials.urls')),
     path('', include('users.urls'))
-] + static(settings.STATIC_URL, documement_root=settings.STATIC_ROOT)
-
-
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
